@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.to(".inviterScroll img",{
 x:"10%", repeat:-1,duration:2 ,yoyo:true
 })
