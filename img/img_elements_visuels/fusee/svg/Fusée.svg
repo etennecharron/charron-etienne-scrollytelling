@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.86 341.65">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        fill: #b3b3b3;
+      }
+
+      .cls-3 {
+        fill: #4d4d4d;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #333;
+        stroke-width: 4px;
+      }
+
+      .cls-5 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g id="Fusée">
+      <path class="cls-2" d="m46.35,302.7h104.6s31.9-106.5,24.4-177S99.35.64,99.35.64c0,0-79.5,61.57-79,137.07s21.09,133.86,21.09,133.86l4.91,31.14Z"/>
+      <polygon class="cls-5" points="183.35 338.7 198.35 254.7 174.35 188.46 159.35 272.7 183.35 338.7"/>
+      <polygon class="cls-3" points="59.72 302.7 63.35 313.7 133.51 313.7 140.22 302.7 59.72 302.7"/>
+      <path class="cls-4" d="m41.44,67.05s28.41,14,58.91,13.66,55.3-13.66,55.3-13.66"/>
+      <path class="cls-5" d="m18.44,339.82L.52,256.39l23.33-67.19s6,39,8,46,10,38,10,38l-23.41,66.61Z"/>
+      <circle class="cls-3" cx="98.1" cy="127.95" r="37.25"/>
+      <circle class="cls-1" cx="97.9" cy="127.79" r="29.41"/>
+    </g>
+  </g>
+</svg>

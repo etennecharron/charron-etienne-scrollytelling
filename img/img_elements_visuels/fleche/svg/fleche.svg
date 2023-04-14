@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.81 308.87">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 18px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g id="fleche">
+      <polyline class="cls-1" points="85.31 80.87 9 80.87 9.31 228.87 277.32 228.87 277.31 299.87 385.31 220.87"/>
+      <polyline id="fleche-2" data-name="fleche" class="cls-1" points="125.81 81.37 278.81 80.87 278.81 9 474.81 153.37 420.81 195.37"/>
+    </g>
+  </g>
+</svg>

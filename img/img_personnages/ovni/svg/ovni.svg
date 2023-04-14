@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396.93 257.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 9px;
+      }
+
+      .cls-2 {
+        fill: #7ae582;
+      }
+
+      .cls-3 {
+        fill: #97b1a6;
+      }
+    </style>
+  </defs>
+  <g id="ovni">
+    <path class="cls-3" d="m82.16,108.66C53.71,117.73,3.1,143.94,4.53,174.43c1.97,42.06,102.29,76.82,184.89,78.81,93.44,2.26,202.98-36.49,203.01-79.11.02-31.7-44.79-56-76.19-66.07-12.66-4.06-113.8-37.77-234.07.59Z"/>
+    <path class="cls-1" d="m90.64,110.43C78.97,71.52,134.81,4.4,198.5,4.5c62.88.1,118.54,65.7,107.26,104.75-10.4,35.98-76.41,45.17-109.04,45.04-30.11-.12-95.46-8.45-106.07-43.85Z"/>
+    <circle class="cls-1" cx="84.53" cy="177.51" r="23.22"/>
+    <circle class="cls-1" cx="198.15" cy="199.07" r="23.22"/>
+    <circle class="cls-1" cx="311.26" cy="177.51" r="23.22"/>
+    <path class="cls-2" d="m160.41,151.11c-62.89-127.33,131.26-137,78.6-.78-25.25,4.34-52.02,5.61-78.6.78Z"/>
+    <ellipse class="cls-4" cx="220.32" cy="110.79" rx="13.18" ry="4.41" transform="translate(-25.88 125) rotate(-30)"/>
+    <ellipse class="cls-4" cx="174.93" cy="109.76" rx="4.41" ry="13.18" transform="translate(-15.31 190.1) rotate(-55)"/>
+  </g>
+</svg>
