@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,133 @@
     <title>Voyage spacial</title>
     <link rel="icon" href="img/img_elements_visuels/favicon/png/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="index">
-<header>
-    <h1>Voyage spacial</h1>
-    <div class="inviterScroll">
-        <p>Défiler vers le bas!</p>
-        <img src="img/img_elements_visuels/fleche/png/fleche.png" alt="">
-        
-    </div>
-    
-    <p>C'est l'histoire d'un ovni qui voyage dans l'espace, les medias présent dans le projets sont réaliser par Étienne Charron et Jérémy Cholette.
-       <br> « Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
-© 2023 - Conception : Marie-Michelle Ouellet et Deuxième Nom| Développement Web : Marie-Michelle Ouellet. »
-    </p>
-</header>
-<main>
-<section id="planeteDebut">
-    <img id="avion" src="img/img_elements_visuels/avion/svg/avion.svg" alt="avion">
-    <img class="nuage" src="img/img_elements_visuels/nuages/svg/nuage_01.svg" alt="nuage">
-    <img class="nuage" src="img/img_elements_visuels/nuages/svg/nuage_02.svg" alt="nuage">
-    <img class="nuage" src="img/img_elements_visuels/nuages/svg/nuage_03.svg" alt="nuage">
-    <img class="nuage" src="img/img_elements_visuels/nuages/svg/nuage_04.svg" alt="nuage">
-    <img class="nuage" src="img/img_elements_visuels/nuages/svg/nuage_05.svg" alt="nuage">
-    <img class="nuage" src="img/img_elements_visuels/nuages/svg/nuage_06.svg" alt="nuage">
-</section>
-<section id="espace1"></section>
-<section id="espace2"></section>
-<section id="trouNoir"></section>
-<section id="espace3"></section>
-<section id="espace4"></section>
-<section id="fin"></section>
-</main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-<script src="script/script.js"></script>
+    <header>
+        <h1>Voyage spacial</h1>
+        <div class="inviterScroll">
+            <p>Défiler vers le bas!</p>
+            <img src="img/img_elements_visuels/fleche/png/fleche.png" alt="">
+
+        </div>
+
+        <p>C'est l'histoire d'un ovni qui voyage dans l'espace, les medias présent dans le projets sont réaliser par
+            Étienne Charron et Jérémy Cholette.
+            <br> « Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
+            © 2023 - Conception : Marie-Michelle Ouellet et Deuxième Nom| Développement Web : Marie-Michelle Ouellet. »
+        </p>
+    </header>
+    <main>
+
+        <section id="terre">
+            <img id="avion" src="img/img_elements_visuels/avion/svg/avion.svg" alt="avion">
+            <img class="nuage n1" src="img/img_elements_visuels/nuages/svg/nuage_01.svg" alt="nuage">
+            <img class="nuage n2" src="img/img_elements_visuels/nuages/svg/nuage_02.svg" alt="nuage">
+            <img class="nuage n3" src="img/img_elements_visuels/nuages/svg/nuage_03.svg" alt="nuage">
+            <img class="nuage n4" src="img/img_elements_visuels/nuages/svg/nuage_04.svg" alt="nuage">
+            <img class="nuage n5" src="img/img_elements_visuels/nuages/svg/nuage_05.svg" alt="nuage">
+            <img class="nuage n6" src="img/img_elements_visuels/nuages/svg/nuage_06.svg" alt="nuage">
+            <img class="oiseau n1"src="img/img_elements_visuels/oiseau/svg/oiseau_01.svg" alt="oiseau">
+            <img class="oiseau n2"src="img/img_elements_visuels/oiseau/svg/oiseau_02.svg" alt="oiseau">
+        </section>
+
+        <section id="terreEspace">
+            <img id="planete terre" src="img/img_elements_visuels/planetes/png/planete_terre.png" alt="planette terre">
+            <img id="fusee" src="img/img_elements_visuels/fusee/svg/Fusée.svg" alt="fusée">
+            <img id="fleche" src="img/img_elements_visuels/fleche/svg/fleche.svg" alt="fleche">
+            <img id="pouce" src="img/img_elements_visuels/pouce/svg/pouce.svg" alt="pouce">
+        </section>
+
+        <section id="espacePlanetes">
+            <img class="planete bleu" src="img/img_elements_visuels/planetes/png/planete01.png" alt="planete bleu">
+            <img class="planete turquoise" src="img/img_elements_visuels/planetes/png/planete02.png"
+                alt="planete turquoise">
+            <img class="planete bleuMauve" src="img/img_elements_visuels/planetes/png/planete03.png"
+                alt="planete bleu et mauve">
+            <img class="planete blanche" src="img/img_elements_visuels/planetes/png/planete04.png"
+                alt="planete blanche">
+            <img class="planete rose" src="img/img_elements_visuels/planetes/png/planete05.png" alt="planete rose">
+            <img class="planete bleuVert" src="img/img_elements_visuels/planetes/png/planete06.png"
+                alt="planete bleu vert">
+            <div class="vache">
+                <img class="tete" src="img/img_elements_visuels/vache/svg/tete_vache.svg" alt="tete vache">
+                <img class="vache" src="img/img_elements_visuels/vache/svg/corp_vache.svg" alt="corp vache">
+            </div>
+        </section>
+
+        <section id="espaceBaleines">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+            <img class="baleine n1" src="img/img_elements_visuels/baleine/svg/Baleine.svg" alt="baleine">
+        </section>
+
+        <section id="trouNoir">
+            <img class="meteorite n1" src="img/img_elements_visuels/asteroid/svg/Asteroid (1).svg" alt="meteorite">
+            <img class="meteorite n2" src="img/img_elements_visuels/asteroid/svg/Asteroid (2).svg" alt="meteorite">
+            <img class="meteorite n3" src="img/img_elements_visuels/asteroid/svg/Asteroid (3).svg" alt="meteorite">
+            <img class="meteorite n4" src="img/img_elements_visuels/asteroid/svg/Asteroid (4).svg" alt="meteorite">
+            <img class="meteorite n5" src="img/img_elements_visuels/asteroid/svg/Asteroid (5).svg" alt="meteorite">
+        </section>
+
+        <section id="espacePlaneteMorte">
+            <div class="planeteCasser n1">
+                <img class="morceau n1" src="img/img_elements_visuels/planete_casser1/png/planete-casser01.png"
+                    alt="planete casser">
+                <img class="morceau n2" src="img/img_elements_visuels/planete_casser1/png/planete-casser02.png"
+                    alt="planete casser">
+                <img class="morceau n3" src="img/img_elements_visuels/planete_casser1/png/planete-casser03.png"
+                    alt="planete casser">
+                <img class="morceau n4" src="img/img_elements_visuels/planete_casser1/png/planete-casser04.png"
+                    alt="planete casser">
+            </div>
+            <div class="planeteCasser n2">
+                <img src="img/img_elements_visuels/planete_casser2/png/planete_casse_bout1.png"
+                    alt="morceau de planette">
+                <img class="morceau n1" src="img/img_elements_visuels/planete_casser2/png/bout2.png"
+                    alt="morceau de planette">
+                <img class="morceau n2" src="img/img_elements_visuels/planete_casser2/png/bout3.png"
+                    alt="morceau de planette">
+                <img class="morceau n3" src="img/img_elements_visuels/planete_casser2/png/bout4.png"
+                    alt="morceau de planette">
+                <img class="morceau n4" src="img/img_elements_visuels/planete_casser2/png/bout5.png"
+                    alt="morceau de planette">
+                <img class="morceau n5" src="img/img_elements_visuels/planete_casser2/png/bout6.png"
+                    alt="morceau de planette">
+                <img class="morceau n6" src="img/img_elements_visuels/planete_casser2/png/bout7.png"
+                    alt="morceau de planette">
+                <img class="morceau n7" src="img/img_elements_visuels/planete_casser2/png/bout8.png"
+                    alt="morceau de planette">
+                <img class="morceau n8" src="img/img_elements_visuels/planete_casser2/png/bout9.png"
+                    alt="morceau de planette">
+                <img class="morceau n9" src="img/img_elements_visuels/planete_casser2/png/bout10.png"
+                    alt="morceau de planette">
+                <img class="morceau n10" src="img/img_elements_visuels/planete_casser2/png/bout11.png"
+                    alt="morceau de planette">
+                <img class="morceau n11" src="img/img_elements_visuels/planete_casser2/png/bout12.png"
+                    alt="morceau de planette">
+                <img class="morceau n12" src="img/img_elements_visuels/planete_casser2/png/bout13.png"
+                    alt="morceau de planette">
+            </div>
+            <div></div>
+        </section>
+
+        <section id="espaceCuthulu">
+            <img id="cuthulu" src="img/img_personnages/cuthulu/svg/cuthulu.svg" alt="cuthulu">
+        </section>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
