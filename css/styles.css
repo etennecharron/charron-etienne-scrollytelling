@@ -1,118 +1,526 @@
-:root{
---vert:#7AE582;
---bleuFoncer:#1B263B;
---rouge:#F15152;
---jaune:#FFD23F;
---gris:#97B1A6;
-}
-*{
-    font-family:Aldrich;
-}
-body{
-    overflow-y:hidden;
-    margin: 0;
-    display: flex;
-    width: 800vw;
-}
-main{
-    display: flex;
-}
-header{
-    width:100vw;
-    height:100vh;
-    background-color:var(--vert);
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
-}
-header h1{
-    font-size:10vmin;
-}
-header p{
-font-size: 15px;
-padding-left: 10vmin;
-padding-right:10vmin;
+:root {
+    --vert: #7AE582;
+    --bleuFoncer: #1B263B;
+    --rouge: #F15152;
+    --jaune: #FFD23F;
+    --gris: #97B1A6;
 }
 
-.inviterScroll img{
-    width:100px;
-    transform: rotate(270deg);
+* {
+    font-family: Aldrich;
 }
-.inviterScroll{
-    padding-right:30px;
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    height: 800vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--vert);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 10vmin;
+}
+
+header p {
+    font-size: 15px;
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+}
+
+.inviterScroll img {
+    width: 100px;
+}
+
+.inviterScroll {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-self: flex-end;
+    margin-top: 30vmin;
 }
-.inviterScroll p{
+
+.inviterScroll p {
     font-size: 30px;
- padding:10px;
+    padding: 10px;
 }
-section{
-    width:100vw;
-    height:100vh;
+
+section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
     object-fit: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:2vw;
 }
-#terre{
-background-color:lightskyblue;
-}   
-#terreEspace{
-background-image:url(../img/img_arriere_plan/etoile_01.png);
-background-color: var(--bleuFoncer);
+section h2{
+    z-index:4;
+    position: absolute;
+    color:white;
 }
-#espacePlanetes{
-    background-image:url(../img/img_arriere_plan/etoile_02.png);
+section p{
+    z-index: 4;
+    position: absolute;
+    top:80px;
+    color:white;
+}
+
+#terre {
+    background-color: lightskyblue;
+}
+
+#terreEspace {
+    background-image: url(../img/img_arriere_plan/etoile_01.png);
     background-color: var(--bleuFoncer);
 }
-#espaceBaleines{
-background-image:url(../img/img_arriere_plan/etoile_01.png);
-background-color: var(--bleuFoncer);
-}
-#trouNoir{
-    background-color:black;
-}
-#espaceAsteroide{
-    background-image:url(../img/img_arriere_plan/etoile_03.png);
+
+#espacePlanetes {
+    background-image: url(../img/img_arriere_plan/etoile_02.png);
     background-color: var(--bleuFoncer);
 }
-#espacePlaneteMorte{
-    background-image:url(../img/img_arriere_plan/etoile_vide.png);
+
+#espaceBaleines {
+    background-image: url(../img/img_arriere_plan/etoile_01.png);
     background-color: var(--bleuFoncer);
 }
-#espaceCuthulu{
+
+#trouNoir {
+    background-color: black;
+}
+
+#espaceAsteroide {
+    background-image: url(../img/img_arriere_plan/etoile_03.png);
     background-color: var(--bleuFoncer);
 }
-.spriteSheet{
-width:200vw;
+
+#espacePlaneteMorte {
+    background-image: url(../img/img_arriere_plan/etoile_vide.png);
+    background-color: var(--bleuFoncer);
 }
-.spriteSheet .image1{
-background-image:url(../img/img_elements_visuels/planetes/sprite_sheet/spritesheet.png);
-width:500px;
-height:500px;
-object-fit: cover;
-background-size: cover;
-animation:anim1 1s infinite steps(24);
+
+#espaceCuthulu {
+    background-color: var(--bleuFoncer);
+}
+
+.spriteSheet {
+    width: 200vw;
+}
+
+.spriteSheet .image1 {
+    background-image: url(../img/img_elements_visuels/planetes/sprite_sheet/spritesheet.png);
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    background-size: cover;
+    animation: anim1 1s infinite steps(24);
 
 }
 
-@keyframes anim1{
-    from{background-position-x:0px;}
-    to{background-position-x: 12000px;}
+@keyframes anim1 {
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position-x: 12000px;
+    }
 }
 
-#avion{
-    width:100vw;
+#avion {
+    width: 80vw;
+    position: absolute;
+    top: 20vh;
+    left:-80vw;
+    z-index: 2;
+}
+
+.nuage {
     position: absolute;
 }
-.nuage{
-    width:50px;
+
+.nuage.n1 {
+    width: 30vw;
+    top: 60vh;
+    left: 10vw;
+    z-index: 1;
+}
+
+.nuage.n2 {
+    width: 30vw;
+    top: 45vh;
+    left: 60vw;
+    z-index: 1;
+}
+
+.nuage.n3 {
+    width: 10vw;
+    top: 85vh;
+    left: 50vw;
+    z-index: 1;
+}
+
+.nuage.n4 {
+    width: 5vw;
+    top: 35vh;
+    left: 10vw;
+    z-index: 1;
+}
+
+.nuage.n5 {
+    width: 20vw;
+    top: 5vh;
+    left: 70vw;
+    z-index: 1;
+}
+
+.nuage.n6 {
+    width: 40vw;
+    top: 10vh;
+    left: 10vw;
+    z-index: 3;
+}
+
+.oiseau {
+    z-index: 1;
     position: absolute;
 }
-.oiseau{
-    width:50px;
+
+.oiseau.n1 {
+    width: 10vw;
+    top: 70vh;
+    left: 70vw;
+}
+
+.oiseau.n2 {
+    width: 10vw;
+    left: 10vw;
+    top: 10vh;
+}
+
+#planeteTerre {
     position: absolute;
+    width: 70vw;
+    left: 5vw;
+    top: 5vh;
+    max-width: 600px;
+    z-index: 2;
+}
+
+#fusee {
+    position: absolute;
+    width: 10vw;
+    max-width: 131px;
+    left: 10vw;
+    top: 15vh;
+    transform: rotate(110deg);
+    z-index: 1;
+}
+
+#fleche {
+    display: none;
+}
+
+#pouce {
+    display: none;
+}
+
+.planete {
+    position: absolute;
+}
+
+.planete.bleu {
+    width: 30vw;
+    left: 50vw;
+    top: 10vh;
+    max-width: 277px;
+}
+
+.planete.turquoise {
+    width: 20vw;
+    right: 50vw;
+    top: 65vh;
+    max-width: 186px;
+}
+
+.planete.bleuVert {
+    width: 10vw;
+    left: 10vw;
+    top: 80vh;
+    max-width: 92px;
+}
+
+.planete.rose {
+    width: 35vw;
+    right: 10vw;
+    top: 60vh;
+    max-width: 325px;
+}
+
+.planete.blanche {
+    width: 25vw;
+    top: 30vh;
+    left: 10vw;
+    max-width: 231px;
+}
+
+.planete.bleuMauve {
+    width: 15vw;
+    left: 3vw;
+    top: 10vh;
+    max-width: 138px;
+}
+
+.vache {
+    position: absolute;
+    display: flex;
+    left: 70vw;
+    width: 5vw;
+    top: 60vh;
+}
+
+.vache .tete {
+    transform: rotate(19deg);
+}
+
+.baleine {
+    position: absolute;
+}
+
+.baleine.n1 {
+    width: 25vw;
+    top: 10vh;
+    left: 40vw;
+}
+
+.baleine.n2 {
+    width: 15vw;
+    top: 20vh;
+    left: 75vw;
+}
+
+.baleine.n3 {
+    width: 20vw;
+    top: 30vh;
+    left: 50vw;
+}
+
+.baleine.n4 {
+    width: 10vw;
+    top: 40vh;
+    left: 30vw;
+}
+
+.baleine.n5 {
+    width: 30vw;
+    top: 50vh;
+    left: 70vw;
+
+}
+
+.baleine.n6 {
+    width: 20vw;
+    top: 60vh;
+    left: 46vw;
+}
+
+.baleine.n7 {
+    width: 20vw;
+    top: 75vh;
+    left: 20vw;
+}
+
+.baleine.n8 {
+    width: 20vw;
+    top: 80vh;
+    left: 80vw;
+
+}
+
+.meteorite {
+    position: absolute;
+}
+
+.meteorite.n1 {
+    width: 15vw;
+    top: 0vh;
+    left: 30vw;
+}
+
+.meteorite.n2 {
+    width: 10vw;
+    top: 20vh;
+    left: 40vw;
+}
+
+.meteorite.n3 {
+    width: 15vw;
+    top: 40vh;
+    left: 50vw;
+}
+
+.meteorite.n4 {
+    width: 10vw;
+    top: 60vh;
+    left: 35vw;
+}
+
+.meteorite.n5 {
+    width: 10vw;
+    top: 80vh;
+    left: 50vw;
+}
+
+.planeteCasser {
+    position: absolute;
+}
+
+.planeteCasser.n1 {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+}
+
+.planeteCasser.n1 .morceau.n1 {
+    width: 20vw;
+    position: absolute;
+    top: 0;
+}
+
+.planeteCasser.n1 .morceau.n2 {
+    width: 3vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.planeteCasser.n1 .morceau.n3 {
+    width: 5vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.planeteCasser.n1 .morceau.n4 {
+    width: 5vw;
+    position: absolute;
+    top: 0;
+}
+
+.planeteCasser.n2 {
+    position: absolute;
+    width: 30vw;
+    height:30vw;
+    top: 40vh;
+    right: 10vw;
+}
+
+.planeteCasser.n2 .morceau.principal {
+    width: 30vw;
+    position: absolute;
+    left:1vmin;
+}
+
+.planeteCasser.n2 .morceau.n1 {
+    width: 5vw;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.planeteCasser.n2 .morceau.n2 {
+    width: 5vw;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.planeteCasser.n2 .morceau.n3 {
+    width: 5vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.planeteCasser.n2 .morceau.n4 {
+    width: 5vw;
+    position: absolute;
+    bottom: 0;
+    right:10px;
+}
+
+.planeteCasser.n2 .morceau.n5 {
+    width: 5vw;
+    position: absolute;
+    bottom: 30px;
+    left:130px;
+}
+
+.planeteCasser.n2 .morceau.n6 {
+    width: 5vw;
+    position: absolute;
+    bottom:0;
+    right:55px;
+}
+
+.planeteCasser.n2 .morceau.n7 {
+    width: 5vw;
+    position: absolute;
+    top:0;
+    right:50px;
+}
+
+.planeteCasser.n2 .morceau.n8 {
+    width: 5vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.planeteCasser.n2 .morceau.n9 {
+    width: 5vw;
+    position: absolute;
+}
+
+.planeteCasser.n2 .morceau.n10 {
+    width: 5vw;
+    position: absolute;
+}
+
+.planeteCasser.n2 .morceau.n11 {
+    width: 5vw;
+    position: absolute;
+}
+
+.planeteCasser.n2 .morceau.n12 {
+    width: 5vw;
+    position: absolute;
+}
+
+#cuthulu {
+    position: absolute;
+    width: 100vw;
+    max-width: 830px;
+    right: 5vw;
 }
