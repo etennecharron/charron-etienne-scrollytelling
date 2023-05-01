@@ -296,7 +296,7 @@ section p{
     display: flex;
     left: 70vw;
     width: 5vw;
-    top: 60vh;
+    top: 40vh;
 }
 
 .vache .tete {
@@ -414,7 +414,6 @@ section p{
     position: absolute;
     top: 0;
     right: 0;
-
 }
 
 .planeteCasser.n1 .morceau.n3 {
@@ -518,9 +517,17 @@ section p{
     position: absolute;
 }
 
-#cuthulu {
+#cuthuluCorp{
     position: absolute;
     width: 100vw;
     max-width: 830px;
     right: 5vw;
+    opacity:0%;
+}
+#cuthuluYeux{
+    max-width:207px;
+    position: absolute;
+    opacity: 0%;
+    top:33%;
+    width:25vw;
 }
