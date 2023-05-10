@@ -154,15 +154,6 @@ gsap.to(".vache", {
     x: "-20vw"
 });
 
-gsap.to(".spritesheetPlanete.bleuMauve",{
-    scrollTrigger: {
-        markers: true,
-        trigger: "#espacePlanetes",
-        start: "10% 50%",
-        end: "60% top",
-        scrub: 1,
-    }, 
-})
 let body = document.querySelector("body");
 
 /*************CHAPITRE 4*************/

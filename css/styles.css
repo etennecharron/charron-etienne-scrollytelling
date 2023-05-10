@@ -245,6 +245,10 @@ section p{
     max-width: 186px;
     object-fit:cover;
     aspect-ratio:1/1;
+    animation:planeteTurquoise 3s infinite steps(24);
+}
+@keyframes planeteTurquoise{
+
 }
 .spritesheetPlanete.bleuMauve {
     width: 15vw;
