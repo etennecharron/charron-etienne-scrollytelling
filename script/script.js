@@ -11,6 +11,19 @@ gsap.to(".inviterScroll p", {
 
 /****************CHAPITRE 1*******************/
 //Animation de l'avion de gauche a droite (scrollTriger avec scrub)
+
+
+gsap.timeline({
+    scrollTrigger:{
+        markers: true,
+        trigger: "#terre",
+        start: "50% 50%",
+        end: "60% top",
+        scrub: 1, 
+    }
+})
+.to("nuage",{y:"500px"})
+
 gsap.to("#avion", {
     scrollTrigger: {
         markers: true,
