@@ -237,13 +237,24 @@ section p{
     max-width: 277px;
 }
 
-.planete.turquoise {
+.spritesheetPlanete.turquoise {
+    position: absolute;
     width: 20vw;
     right: 50vw;
     top: 65vh;
     max-width: 186px;
+    object-fit:cover;
+    aspect-ratio:1/1;
 }
-
+.spritesheetPlanete.bleuMauve {
+    width: 15vw;
+    left: 3vw;
+    top: 10vh;
+    max-width: 138px;
+    position: absolute;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
 .planete.bleuVert {
     width: 10vw;
     left: 10vw;
@@ -265,12 +276,7 @@ section p{
     max-width: 231px;
 }
 
-.planete.bleuMauve {
-    width: 15vw;
-    left: 3vw;
-    top: 10vh;
-    max-width: 138px;
-}
+
 
 .vache {
     position: absolute;
