@@ -144,7 +144,7 @@ gsap.to(".planete", {
 
 gsap.to(".vache", {
     scrollTrigger: {
-        markers: true,
+           markers: true,
         trigger: "#espacePlanetes",
         start: "10% 50%",
         end: "60% top",
@@ -155,6 +155,19 @@ gsap.to(".vache", {
 });
 
 let body = document.querySelector("body");
+let timer = setTimeout(removeClass,100);
+
+function enleverClass(){
+body.classList.remove("scrolling")
+}
+
+window.addEventListener("scroll",function(){
+    body.classList.add("scrolling");
+    window.clearTimeout(tuner);
+    timer = setTimeout(enleverClass,100);
+})
+
+
 
 /*************CHAPITRE 4*************/
 // Animation de baleines

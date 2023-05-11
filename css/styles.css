@@ -243,11 +243,18 @@ section p{
     right: 50vw;
     top: 65vh;
     max-width: 186px;
-    object-fit:cover;
+    background-image:url("../img/img_elements_visuels/planetes/sprite_sheet/spritesheet\ \(1\).png");
+    background-size: cover;
     aspect-ratio:1/1;
-    animation:planeteTurquoise 3s infinite steps(24);
+    animation:planeteTurquoise 1s infinite steps(24);
 }
 @keyframes planeteTurquoise{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:2400% 0;
+    }
 
 }
 .spritesheetPlanete.bleuMauve {
@@ -256,8 +263,23 @@ section p{
     top: 10vh;
     max-width: 138px;
     position: absolute;
-    object-fit: cover;
+    background-size: cover;
+    background-image:url("../img/img_elements_visuels/planetes/sprite_sheet/spritesheet\ \(2\).png");
     aspect-ratio: 1/1;
+    animation:planeteBleuMauve 1s infinite steps(24);
+    animation-play-state:paused;
+}
+@keyframes planeteBleuMauve {
+        from{
+            background-position:0 0;
+        }
+        to{
+            background-position:2400% 0;
+        }
+}
+
+.scrolling{
+    animation-play-state: running;
 }
 .planete.bleuVert {
     width: 10vw;
