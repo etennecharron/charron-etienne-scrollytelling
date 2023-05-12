@@ -588,3 +588,18 @@ ul.technique-gsap{
 ul.technique-gsap li{
     margin: 5px 0;
 }
+
+#fleche{
+    position: absolute;
+    max-width:70px;
+    bottom:5vh;
+    width:10vw;
+    left:10vw;
+}
+#pouce{
+    position: absolute;
+    width:10vw;
+    bottom:5vh;
+    left:10vw;
+    visibility: hidden;
+}

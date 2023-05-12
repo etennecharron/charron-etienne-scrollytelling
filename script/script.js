@@ -2,6 +2,7 @@
 gsap.registerPlugin(ScrollTrigger);
 //gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
+//gsap.registerPlugin(MorphSVGPlugin)
 gsap.to(".inviterScroll img", {
     y: "10%",
     repeat: -1,
@@ -132,7 +133,8 @@ gsap.timeline({
 .to("#planeteTerre",{y:"-10vh"},0)
 .to("#fusee",{y:"-15vh"},0)
 .to("#petiteOurse",{y:"-5vh"},0)
-
+.to("#pouce",{y:"-10vh"},0)
+.to("#fleche",{y:"-10vh"},0)
 
 //ANIMATION DE LA PETITE OURSE QUI APPARET
 gsap.fromTo("#petiteOursePath",{
@@ -182,6 +184,16 @@ gsap.timeline({
 
 
 
+    .to("#flechePath",{
+        scrollTrigger:{
+            markers: true,
+            trigger: "#terreEspace",
+            start: "50% 50%",
+            end: "40% top",
+           scrub:1,
+        },
+        morphSVG:"#poucePath1"
+    })
 
 /******************CHAPITRE 3 ESPACE PLANETES****************/
 //Parallax
@@ -397,3 +409,5 @@ gsap.timeline({
         opacity: "100%",
         duration: 10
     })
+
+    

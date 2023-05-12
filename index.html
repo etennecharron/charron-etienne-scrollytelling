@@ -55,6 +55,8 @@
             <ul class="technique-gsap"> 
                 <li>anim sur position sur x, y et rotation</li>  
                 <li>anim drawSVG</li>
+                <li>anim morphSVH</li>
+                <li></li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger=#terreEspace/li> 
@@ -64,6 +66,16 @@
             </ul> 
             <h2>Espace</h2>
             <p>L'ovni arrive dans l'espace</p>
+            <!--F L E C H E-->
+            <svg id="fleche" width="121" height="128" viewBox="0 0 121 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="flechePath" d="M36.5 49.5V1H82V49.5H119.5L60.5 126.5L2 49.5H36.5Z" fill="#4BFF47" stroke="black"/>
+                </svg>
+                <!--POUCE-->
+                <svg id="pouce" width="160" height="187" viewBox="0 0 160 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="poucePath1" d="M93.2729 14C88.7729 50 118.273 110.5 118.273 110.5H159.273L152.296 157.342C152.426 157.348 152.421 157.399 152.273 157.5L152.296 157.342C148.699 157.181 41.5422 192.161 31.2729 184.5C20.6339 176.563 31.2729 171 31.2729 171C31.2729 171 16.2729 178 10.7729 167C5.27288 156 17.7729 147.5 17.7729 147.5C17.7729 147.5 3.77289 153.5 1.27289 135C-1.22711 116.5 14.2729 119.5 14.2729 119.5C14.2729 119.5 3.27289 114.5 8.77289 100C14.2729 85.5 63.7729 95.5 63.7729 95.5L70.7729 69.5L63.7729 29.5C63.7729 29.5 97.7729 -22 93.2729 14Z" fill="#4BFF47"/>
+                    <path id="poucePath2" d="M118.273 110.5C118.273 110.5 88.7729 50 93.2729 14C97.7729 -22 63.7729 29.5 63.7729 29.5L70.7729 69.5L63.7729 95.5C63.7729 95.5 14.2729 85.5 8.77289 100C3.27289 114.5 14.2729 119.5 14.2729 119.5C14.2729 119.5 -1.22711 116.5 1.27289 135C3.77289 153.5 17.7729 147.5 17.7729 147.5C17.7729 147.5 5.27288 156 10.7729 167C16.2729 178 31.2729 171 31.2729 171C31.2729 171 20.6339 176.563 31.2729 184.5C41.9119 192.437 156.54 154.608 152.273 157.5L159.273 110.5H118.273Z" stroke="black"/>
+                    </svg>
+                    <!--RESTE DU CODE-->
             <img class="planete" id="planeteTerre" src="img/img_elements_visuels/planetes/png/planete_terre.png" alt="planette terre">
             <img id="fusee" src="img/img_elements_visuels/fusee/svg/Fusée.svg" alt="fusée">
 
@@ -210,6 +222,7 @@
 <!--COMMENTER LA LIGNE DE CODE DE GSAP PAYANT
     <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>
 -->
+<!--<script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="script/script.js"></script>
