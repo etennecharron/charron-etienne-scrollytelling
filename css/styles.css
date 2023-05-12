@@ -177,7 +177,7 @@ section p{
 }
 
 .nuage.n3 {
-    width: 10vw;
+    width: 5vw;
     top: 85vh;
     left: 50vw;
     z-index: 1;
@@ -192,7 +192,7 @@ section p{
 
 .nuage.n5 {
     width: 20vw;
-    top: 5vh;
+    top: 15vh;
     left: 70vw;
     z-index: 1;
 }
@@ -224,7 +224,15 @@ section p{
     z-index: 1;
     border:solid 1px green;
 }
-
+#petiteOurse{
+    position: absolute;
+    bottom: 10vh;
+    right:10vh;
+    width: 40vw;   
+    max-width: 348px;
+    transform: rotate(-20deg); 
+    z-index: 0;
+}
 .planete {
     position: absolute;
     border:solid 1px green;
@@ -247,6 +255,7 @@ section p{
     background-size: cover;
     aspect-ratio:1/1;
     animation:planeteTurquoise 1s infinite steps(24);
+    animation-play-state: paused;
 }
 @keyframes planeteTurquoise{
     from{
@@ -278,7 +287,10 @@ section p{
         }
 }
 
-.scrolling{
+.scrolling .spritesheetPlanete.bleuMauve{
+    animation-play-state: running;
+}
+.scrolling .spritesheetPlanete.turquoise{
     animation-play-state: running;
 }
 .planete.bleuVert {
@@ -379,32 +391,37 @@ section p{
 
 .meteorite.n1 {
     width: 15vw;
-    top: 0vh;
+    top: 15vh;
     left: 30vw;
+    z-index:3;
 }
 
 .meteorite.n2 {
     width: 10vw;
     top: 20vh;
     left: 40vw;
+    z-index:2;
 }
 
 .meteorite.n3 {
     width: 15vw;
     top: 40vh;
     left: 50vw;
+    z-index:3;
 }
 
 .meteorite.n4 {
     width: 10vw;
     top: 60vh;
     left: 35vw;
+    z-index:2;
 }
 
 .meteorite.n5 {
     width: 10vw;
     top: 80vh;
     left: 50vw;
+    z-index:2;
 }
 
 .planeteCasser {
@@ -549,4 +566,25 @@ section p{
     top:33%;
     width:25vw;
     border:solid 1px green;
+}
+
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
 }
