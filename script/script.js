@@ -1,8 +1,8 @@
 /***************HEADER****************/
 gsap.registerPlugin(ScrollTrigger);
-//gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
-//gsap.registerPlugin(MorphSVGPlugin)
+gsap.registerPlugin(MorphSVGPlugin)
 gsap.to(".inviterScroll img", {
     y: "10%",
     repeat: -1,
